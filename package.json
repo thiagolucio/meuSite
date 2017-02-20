@@ -1,0 +1,30 @@
+{
+  "name": "thiagolucio",
+  "version": "1.0.0",
+  "description": "site curriculum  de thiago lucio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagolucio/meuSite.git"
+  },
+  "keywords": [
+    "site",
+    "cv",
+    "thiago",
+    "lucio"
+  ],
+  "author": "Thiago Lúcio Bittencourt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagolucio/meuSite/issues"
+  },
+  "homepage": "https://github.com/thiagolucio/meuSite#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+  }
+}
