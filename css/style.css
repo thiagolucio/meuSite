@@ -43,12 +43,13 @@
 .user-image:hover { border: 0px solid #FFFFFF;}
 
 .sidebar-nav {
-    position: relative;
     top: 10;
     width: 250px;
+    height: auto;
     list-style: none;
     margin: 10px;
     padding: auto;
+    font-size: 1.28em;
 }
 .sidebar-nav li {
    line-height: 40px;
@@ -56,20 +57,31 @@
 }
 .sidebar-nav li a {
     color: #A2A2A2;
-    font-size: 1.5em;
+
      font-family: 'Raleway', sans-serif, Arial, Verdana;
 }
 
 .sidebar-nav li a:hover {
     color: #FFFFFF;
-    font-size: 1.5em;
+
     font-family: 'Raleway', sans-serif, Arial, Verdana;
+}
+
+
+.sidebar-nav li a:hover, .sidebar-nav li.active,
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    -webkit-transition: width .5s ease-in;
+    -moz-transition: width .5s ease-in;
+    -ms-transition: width .5s ease-in;
+    transition: width .5s ease-in;
 }
 
 .sidebar-nav li a i:before {
     margin-right: 5px;
 }
-
 
 .content-header {
     height: 65px;
@@ -93,7 +105,7 @@
 
 .btn-menu {
     color: #FFF;
-    padding: 0px 20px;
+    padding: 0px 10px;
     vertical-align: bottom;
 }
 
@@ -101,6 +113,36 @@
     padding: 20px;
 }
 
+.centered {
+    width: 250px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center!important;
+}
+
+.iconBrand i {
+    padding: 6px;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.iconBrand i:hover {
+    font-size: 26px;
+    margin-bottom: 20px;
+    padding: 5px;
+    cursor: pointer;
+/*    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;*/
+    color: #FFF;
+}
+
+.transicao {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*MEDIA RESOLUCOES*/
 @media (max-width:767px) {
     #wrapper {
         padding-left: 0;
@@ -123,32 +165,4 @@
     .inset {
         padding: 15px;
     }
-}
-
-.centered {
-    width: 250px;
-    margin-left: auto!important;
-    margin-right: auto!important;
-    text-align: center!important;
-}
-
-.iconBrand i {
-    padding: 10px;
-    font-size: 24px;
-    margin-bottom: 24px;
-}
-
-.iconBrand i:hover {
-    font-size: 25px;
-    margin-bottom: 20px;
-    padding: 10px;
-    cursor: pointer;
-/*    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;*/
-    color: #FFF;
-}
-
-.transicao {
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }

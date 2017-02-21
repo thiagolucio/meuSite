@@ -26,3 +26,6 @@
           function mail() {
               window.open("mailto:thiagolucio@gmail.com", "_blank");
           };
+          //scroll
+         $('body').scrollspy({ target: '#spy' });
+         $('#spy').scrollspy();
