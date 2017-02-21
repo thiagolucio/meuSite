@@ -1,5 +1,5 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'bower' ]
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
 2 info using npm@4.1.2
 3 info using node@v7.5.0
 4 silly loadCurrentTree Starting
@@ -19,18 +19,18 @@
 11 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
 11 verbose stack     at tryToString (fs.js:426:3)
 11 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:413:12)
-12 verbose cwd /media/thiagolucio/DADOS/TRABALHOS/PROJETOS/NOVO SITE/SITE
-13 error Linux 4.10.0-041000rc6-generic
-14 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "bower"
+12 verbose cwd /media/DADOS/GITHUB/meuSite
+13 error Linux 4.10.0-041000-generic
+14 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install"
 15 error node v7.5.0
 16 error npm  v4.1.2
-17 error file /media/thiagolucio/DADOS/TRABALHOS/PROJETOS/NOVO SITE/SITE/package.json
+17 error file /media/DADOS/GITHUB/meuSite/package.json
 18 error code EJSONPARSE
 19 error Failed to parse json
 19 error Trailing comma in object at 29:3
 19 error   }
 19 error   ^
-20 error File: /media/thiagolucio/DADOS/TRABALHOS/PROJETOS/NOVO SITE/SITE/package.json
+20 error File: /media/DADOS/GITHUB/meuSite/package.json
 21 error Failed to parse package.json data.
 21 error package.json must be actual JSON, not just JavaScript.
 21 error
