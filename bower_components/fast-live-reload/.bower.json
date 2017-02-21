@@ -1,0 +1,45 @@
+{
+  "name": "fast-live-reload",
+  "version": "2.7.4",
+  "homepage": "https://github.com/bmustiata/fast-live-reload",
+  "authors": [
+    "Bogdan Mustiata <bogdan.mustiata@gmail.com>"
+  ],
+  "description": "The swiss army knife of live reloading that works with all the browsers.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "fast-live-reload",
+    "live-reload",
+    "ie8",
+    "ie9",
+    "ie",
+    "ajax"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "lib",
+    "doc",
+    "node_modules",
+    "src",
+    "tmp",
+    "iframe",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "_release": "2.7.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.7.4",
+    "commit": "f18cc9226204a0fc7696aa4e2b6b5e4e051a6daa"
+  },
+  "_source": "https://github.com/bmustiata/fast-live-reload.git",
+  "_target": "^2.7.4",
+  "_originalSource": "fast-live-reload"
+}

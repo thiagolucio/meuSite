@@ -1,28 +1,28 @@
-$(document).ready(function () {
-  var trigger = $('.hamburger'),
-      overlay = $('.overlay'),
-     isClosed = false;
+          /*Menu-toggle*/
+          $("#menu-toggle").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("active");
+          });
+          $(document).ready(function() {
+              $('[data-toggle="tooltip"]').tooltip();
+          });
+          //Links das redes sociais e mail
+          function linkedin() {
+              window.open("https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825", "_blank");
+          };
 
-    trigger.click(function () {
-      hamburger_cross();
-    });
+          function github() {
+              window.open("https://github.com/thiagolucio", "_blank");
+          };
 
-    function hamburger_cross() {
+          function wordpress() {
+              window.open("https://thiagolucioweb.wordpress.com/", "_blank");
+          };
 
-      if (isClosed == true) {
-        overlay.hide();
-        trigger.removeClass('is-open');
-        trigger.addClass('is-closed');
-        isClosed = false;
-      } else {
-        overlay.show();
-        trigger.removeClass('is-closed');
-        trigger.addClass('is-open');
-        isClosed = true;
-      }
-  }
+          function blogger() {
+              window.open("http://thiagolucioblog.blogspot.com.br/", "_blank");
+          };
 
-  $('[data-toggle="offcanvas"]').click(function () {
-        $('#wrapper').toggleClass('toggled');
-  });
-});
+          function mail() {
+              window.open("mailto:thiagolucio@gmail.com", "_blank");
+          };
