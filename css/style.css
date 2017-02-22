@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700);
+body{background: #646464}
 #wrapper {
     padding-left: 250px;
     transition: all 0.4s ease 0s;
@@ -8,7 +9,7 @@
     margin-left: -250px;
     left: 250px;
     width: 250px;
-    background: #000;
+    background: #262626;
     position: fixed;
     height: 100%;
     overflow-y: auto;
@@ -16,17 +17,9 @@
     transition: all 0.4s ease 0s;
 }
 
-#wrapper.active {
-    padding-left: 0;
-}
-
-#wrapper.active #sidebar-wrapper {
-    left: 0;
-}
-
-#page-content-wrapper {
-    width: 100%;
-}
+#wrapper.active { padding-left: 0; }
+#wrapper.active #sidebar-wrapper { left: 0; }
+#page-content-wrapper { width: 100%; }
 
 .user-image {
     margin: 25px auto;
@@ -47,31 +40,30 @@
     width: 250px;
     height: auto;
     list-style: none;
-    margin: 10px;
+    /*margin: 10px;*/
     padding: auto;
     font-size: 1.28em;
 }
 .sidebar-nav li {
    line-height: 40px;
    background: transparent;
+   margin:0;
 }
 .sidebar-nav li a {
-    color: #A2A2A2;
-
-     font-family: 'Raleway', sans-serif, Arial, Verdana;
+    color: #DEDEDE;
+    font-family: 'Raleway', sans-serif, Arial, Verdana;
 }
 
 .sidebar-nav li a:hover {
     color: #FFFFFF;
-
     font-family: 'Raleway', sans-serif, Arial, Verdana;
 }
 
 
 .sidebar-nav li a:hover, .sidebar-nav li.active,
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.3);
     text-decoration: none;
     -webkit-transition: width .5s ease-in;
     -moz-transition: width .5s ease-in;
@@ -79,14 +71,8 @@
     transition: width .5s ease-in;
 }
 
-.sidebar-nav li a i:before {
-    margin-right: 5px;
-}
-
-.content-header {
-    height: 65px;
-    line-height: 65px;
-}
+.sidebar-nav li a i:before { margin-right: 5px; }
+.content-header { height: 65px; line-height: 65px; }
 
 .content-header h1 {
     margin: 0;
@@ -97,21 +83,14 @@
     font-size: 2.3em;
     /*font-family: 'Rock Salt', cursive;*/
 }
-
-#menu-toggle {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif, Arial, Verdana;
-}
+#menu-toggle { text-decoration: none; font-size: 0.6em}
 
 .btn-menu {
     color: #FFF;
     padding: 0px 10px;
     vertical-align: bottom;
 }
-
-.inset {
-    padding: 20px;
-}
+.inset { padding: 20px; }
 
 .centered {
     width: 250px;

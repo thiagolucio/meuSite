@@ -23,6 +23,6 @@
     "jquery": "^3.1.1",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
-    "fast-live-reload": "^2.7.4",
+    "fast-live-reload": "^2.7.4"
   }
 }
