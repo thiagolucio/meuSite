@@ -1,10 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700);
-body{background: #646464}
-#wrapper {
-    padding-left: 250px;
-    transition: all 0.4s ease 0s;
-}
-
+body{background: #646464; color: #eeeeee;}
+.txt-white{color: #FFFFFF;}
+h1#home {color: #FFFFFF;}
+#wrapper { padding-left: 250px; transition: all 0.4s ease 0s; }
 #sidebar-wrapper {
     margin-left: -250px;
     left: 250px;
@@ -16,11 +14,54 @@ body{background: #646464}
     z-index: 1000;
     transition: all 0.4s ease 0s;
 }
-
 #wrapper.active { padding-left: 0; }
 #wrapper.active #sidebar-wrapper { left: 0; }
 #page-content-wrapper { width: 100%; }
-
+/*personalizando botoes*/
+.btn, .btn:hover {
+    border-color: none;
+    padding: 12px 16px;
+    border-radius: 0px;
+    background-image: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.btn-info {background-color: #e7b216;}
+.btn-info:hover {background-color: #d7a100;border: 1px solid #FFF;}
+.btn-primary {background-color: #0597e9;}
+.btn-primary:hover {background-color: #117cb8;border: 1px solid #FFF;}
+.btn-default {background-color: #a7a7a7;}
+.btn-default:hover {background-color: #909090;border: 1px solid #FFF;}
+/*personalizando tooltip*/
+.tooltip > .tooltip-inner {
+    background-color: #0aa7ff;
+    color: #FFFFFF;
+    border: 1px solid #0aa7ff;
+}
+input[type=text], input[type=email], textarea#mensagem {border-radius: 0px;}
+/*estilizando jumbotron*/
+.jumbotron{ padding: 30px;}
+.jumbotron p {
+    font-size: 18px;
+    text-align: left;
+    text-justify: inter-word;
+}
+/* Tooltip borda do topo */
+.tooltip.top > .tooltip-arrow { border-top: 5px solid #0791de; }
+/* Tooltip borda do bottom */
+.tooltip.bottom > .tooltip-arrow { border-bottom: 5px solid #0791de; }
+/* Tooltip borda esquerda */
+.tooltip.left > .tooltip-arrow { border-left: 5px solid #0791de; }
+/* Tooltip borda direita */
+.tooltip.right > .tooltip-arrow { border-right: 5px solid #0791de; }
+/*personalizacao navbar*/
+.navbar-default {
+    background-image: none;
+    filter: none;
+    background-repeat: no-repeat;
+    background: #222222;
+}
+/*estilos user profile sidebar*/
 .user-image {
     margin: 25px auto;
     -webkit-border-radius: 50%;
@@ -32,9 +73,7 @@ body{background: #646464}
     -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
     -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
 }
-
 .user-image:hover { border: 0px solid #FFFFFF;}
-
 .sidebar-nav {
     top: 10;
     width: 250px;
@@ -53,13 +92,10 @@ body{background: #646464}
     color: #DEDEDE;
     font-family: 'Raleway', sans-serif, Arial, Verdana;
 }
-
 .sidebar-nav li a:hover {
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif, Arial, Verdana;
 }
-
-
 .sidebar-nav li a:hover, .sidebar-nav li.active,
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
     color: #FFFFFF;
@@ -70,7 +106,6 @@ body{background: #646464}
     -ms-transition: width .5s ease-in;
     transition: width .5s ease-in;
 }
-
 .sidebar-nav li a i:before { margin-right: 5px; }
 .content-header { height: 65px; line-height: 65px; }
 
@@ -83,65 +118,51 @@ body{background: #646464}
     font-size: 2.3em;
     /*font-family: 'Rock Salt', cursive;*/
 }
-#menu-toggle { text-decoration: none; font-size: 0.6em}
-
+#menu-toggle { text-decoration: none; font-size: 0.6em; color: #FFFFFF; }
+#menu-toggle:hover {
+    font-size: 0.8em;
+    color: #0aa7ff;
+    text-shadow: 2px 2px 7px #000000;
+    letter-spacing: 10px;
+}
 .btn-menu {
     color: #FFF;
     padding: 0px 10px;
     vertical-align: bottom;
 }
 .inset { padding: 20px; }
-
 .centered {
     width: 250px;
     margin-left: auto!important;
     margin-right: auto!important;
     text-align: center!important;
 }
-
 .iconBrand i {
     padding: 6px;
     font-size: 24px;
     margin-bottom: 24px;
 }
-
 .iconBrand i:hover {
     font-size: 26px;
     margin-bottom: 20px;
     padding: 5px;
     cursor: pointer;
-/*    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;*/
     color: #FFF;
 }
-
 .transicao {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-
-
 /*MEDIA RESOLUCOES*/
 @media (max-width:767px) {
-    #wrapper {
-        padding-left: 0;
-    }
-    #sidebar-wrapper {
-        left: 0;
-    }
-    #wrapper.active {
-        position: relative;
-        left: 250px;
-    }
+    #wrapper { padding-left: 0; }
+    #sidebar-wrapper { left: 0; }
+    #wrapper.active { position: relative; left: 250px; }
     #wrapper.active #sidebar-wrapper {
         left: 250px;
         width: 250px;
         transition: all 0.4s ease 0s;
     }
-    #menu-toggle {
-        display: inline-block;
-    }
-    .inset {
-        padding: 15px;
-    }
+    #menu-toggle { display: inline-block; }
+    .inset { padding: 15px; }
 }

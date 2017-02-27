@@ -3,6 +3,9 @@
               e.preventDefault();
               $("#wrapper").toggleClass("active");
           });
+            $("#botao-menu").hover(function() {
+                $(this).toggleClass("rubberBand");
+            });
           $(document).ready(function() {
               $('[data-toggle="tooltip"]').tooltip();
           });
